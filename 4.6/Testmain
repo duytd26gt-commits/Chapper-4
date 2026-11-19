@@ -1,0 +1,35 @@
+public class TestMain {
+    public static void main(String[] args) {
+
+        Animal animal = new Animal("Voi");
+        System.out.println("Test Animal:");
+        System.out.println(animal.toString());
+        System.out.println("-------------------------");
+
+
+        Mammal mammal = new Mammal("Khỉ");
+        System.out.println("Test Mammal:");
+        System.out.println(mammal.toString());
+        System.out.println("-------------------------");
+
+
+        Cat cat = new Cat("Kitty");
+        System.out.println("Test Cat:");
+        System.out.println(cat.toString());
+        System.out.print("Tiếng kêu: ");
+        cat.greets();
+        System.out.println("-------------------------");
+
+
+        Dog dog1 = new Dog("Corgi");
+        Dog dog2 = new Dog("Husky");
+        System.out.println("Test Dog:");
+        System.out.println(dog1.toString());
+
+        System.out.print("Tiếng kêu bình thường: ");
+        dog1.greets();
+
+        System.out.print("Tiếng kêu khi gặp chó khác: ");
+        dog1.greets(dog2);
+    }
+}
