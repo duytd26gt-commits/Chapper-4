@@ -1,0 +1,25 @@
+public class TestMain {
+    public static void main(String[] args) {
+
+        System.out.println("--- TEST LỚP CIRCLE ---");
+        Circle myCircle = new Circle(2.5, "blue", false);
+
+        System.out.println(myCircle.toString());
+
+
+        System.out.println("Diện tích hình tròn: " + myCircle.getArea());
+
+        System.out.println("\n--- TEST LỚP SQUARE ---");
+        Square mySquare = new Square(4.0, "yellow", true);
+
+        System.out.println(mySquare.toString());
+
+
+        System.out.println("Diện tích hình vuông: " + mySquare.getArea());
+        System.out.println("Cạnh của hình vuông hiện tại: " + mySquare.getSide());
+
+        System.out.println("\nĐổi kích thước cạnh thành 5.5...");
+        mySquare.setSide(5.5);
+        System.out.println("Diện tích mới của hình vuông: " + mySquare.getArea());
+    }
+}
